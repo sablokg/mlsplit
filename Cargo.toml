@@ -1,0 +1,28 @@
+[package]
+name = "ml-split"
+version = "0.1.0"
+edition = "2021"
+description = "Random and stratified train/test splitting for X/y data, framework-agnostic and usable with any Rust ML crate (ndarray, nalgebra, linfa, smartcore, plain Vec, ...)."
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+keywords = ["machine-learning", "train-test-split", "stratified", "ml", "cross-validation"]
+categories = ["science", "algorithms"]
+repository = "https://example.com/ml-split"
+
+[dependencies]
+rand = "0.8"
+thiserror = "1"
+ndarray = { version = "0.15", optional = true }
+
+[features]
+default = []
+ndarray = ["dep:ndarray"]
+
+[[example]]
+name = "basic"
+path = "examples/basic.rs"
+
+[[example]]
+name = "ndarray_usage"
+path = "examples/ndarray_usage.rs"
+required-features = ["ndarray"]
