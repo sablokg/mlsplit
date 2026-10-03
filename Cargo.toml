@@ -1,13 +1,15 @@
 [package]
 name = "ml-split"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 description = "Random and stratified train/test splitting for X/y data, framework-agnostic and usable with any Rust ML crate (ndarray, nalgebra, linfa, smartcore, plain Vec, ...)."
-license = "MIT OR Apache-2.0"
+license = "MIT"
 readme = "README.md"
+authors = ["Gaurav Sablok <gsablok@proton.me>"]
 keywords = ["machine-learning", "train-test-split", "stratified", "ml", "cross-validation"]
 categories = ["science", "algorithms"]
-repository = "https://example.com/ml-split"
+repository = "https://codeberg.org/gsablok/mlsplit"
+homepage = "https://codeberg.org/gsablok/mlsplit"
 
 [dependencies]
 rand = "0.8"
